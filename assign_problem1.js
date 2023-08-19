@@ -1,10 +1,14 @@
 
 function cubeNumber(number) {
-    const result = number*number*number; 
-    return result;
+    if(typeof(number) != 'number') {
+        return "Inout must be a number.";
+    }else {
+        const result = number*number*number; 
+        return result;
+    }
 }
 
-const output = cubeNumber(4);
+const output = cubeNumber(8);
 console.log(output);
 
 
